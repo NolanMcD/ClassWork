@@ -1,0 +1,3 @@
+"San Francisco, CA HUD Metro FMR Area",2197,2720,3339,4365,4657,CA
+"San Jose-Sunnyvale-Santa Clara, CA HUD Metro FMR Area",2103,2458,2970,3943,4525,CA
+"New York, NY HUD Metro FMR Area",1665,1714,1951,2472,2643,NY
