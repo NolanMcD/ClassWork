@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar 24 18:55:19 2020
+
+@author: boltj
+"""
+import csv
+
+def state_high(filename):
+    keys = []
+    values = []
+    with open(filename, "r") as csvfile:
+        csvreader = csv.reader(csvfile)
+        for row in csvreader:
+            key = row[6]
+            value = float(row[1])
+            
+            keys.append(key)
+            values.append(value)
+        myDict = {}
+        for x in range(0, len(keys)):
+            if(keys[x] in myDict):
+                myDict[keys[x]] = max(myDict[keys[x]],values[x])
+            else:
+                myDict[keys[x]] = values[x]
+    return print(myDict)
+
+print(state_high("simple.txt"))
+    
+            
+    
+    
